@@ -14,7 +14,7 @@ sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
 
 shadowJar {
-    archiveFileName = 'TwitchSubscribersChecker.jar'
+    archiveFileName = 'EnvRefresher.jar'
     dependencies {
         exclude('*.json')
         exclude('*.p12')
@@ -44,11 +44,7 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:4.13'
     implementation 'junit:junit:4.13'
-    implementation 'org.json:json:20200518'
-
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
     implementation 'ch.qos.logback:logback-classic:1.2.3'
     implementation 'ch.qos.logback:logback-core:1.2.3'
